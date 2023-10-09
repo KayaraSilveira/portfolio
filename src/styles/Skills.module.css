@@ -3,6 +3,11 @@
     margin: 5px 0;
 }
 
+.girlcode {
+    max-width: 95%;
+    height: auto;
+}
+
 @media screen and (max-width: 500px) {
     .girlcode {
         max-width: 90%;

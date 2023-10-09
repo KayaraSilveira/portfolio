@@ -31,7 +31,7 @@ export default function Project(props: ProjectProps) {
                             <Image
                                 className={styles.imageCarousel}
                                 src={`/projects/${image}`}
-                                alt="Captura de tela do Projeto"
+                                alt={`Captura de tela do projeto ${project.name}`}
                                 width={1333} 
                                 height={750} 
                                 />
@@ -40,7 +40,7 @@ export default function Project(props: ProjectProps) {
                     </Carousel> 
                 </div>  
                 <div className="col-12 col-lg-4 mt-4">
-                    <h4><span className="yellow-txt">Descrição</span> do projeto:</h4>
+                    <h2><span className="yellow-txt">Descrição</span> do projeto:</h2>
                     <p>
                         {project.longDescription}
                     </p> 
@@ -49,20 +49,20 @@ export default function Project(props: ProjectProps) {
             <div className="row">
                 <div className="col-12 col-lg-8 d-flex flex-column flex-lg-row">
                     <div className="my-4 col-12 col-lg-6">
-                        <h4>Principais <span className="yellow-txt">funcionalidades</span>:</h4>
+                        <h2>Principais <span className="yellow-txt">funcionalidades</span>:</h2>
                         <ul>
                             {project.features.map((feature: string) => <li key={`${project.id}_${feature}`}><BsFlower3/>{feature}</li>)} 
                         </ul>
                     </div>
                     <div className="my-4 col-12 col-lg-6">
-                        <h4>Principais <span className="yellow-txt">Tecnologias</span>:</h4>
+                        <h2>Principais <span className="yellow-txt">Tecnologias</span>:</h2>
                         <ul>
                             {project.tags.map((tag: string) => <li key={`${project.id}_${tag}`}><BsFlower3/>{tag}</li>)} 
                         </ul>
                     </div>
                 </div>
                 <div className="my-4 col-12 col-lg-4">
-                        <h4>Onde <span className="yellow-txt">Encontrar </span>o projeto:<span className="yellow-txt"></span></h4>
+                        <h2>Onde <span className="yellow-txt">Encontrar </span>o projeto:<span className="yellow-txt"></span></h2>
                         <div className="text-center my-3">
                             <Link target="_blank" href={project.github}>
                                 <BtnOutline text="Ver repositório">

@@ -7,7 +7,7 @@ export default function Skills() {
     <div className="container">
         <div className="row">
             <div className="col-md-6 d-flex flex-column justify-content-center">
-                <h4>Minhas principais <span className="yellow-txt">habilidades</span></h4>
+                <h3>Minhas principais <span className="yellow-txt">habilidades</span></h3>
                 <p></p>  
                 <ul>
                     <li className={styles.skillName}><BsFlower3 className="iconList"></BsFlower3> Python</li>
@@ -23,8 +23,8 @@ export default function Skills() {
                     className={styles.girlcode}
                     src="/girlcode.png"
                     alt="Desenho de uma menina programando"
-                    width={500} 
-                    height={450} 
+                    width={640} 
+                    height={565} 
                     />
             </div>
         </div>

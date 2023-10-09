@@ -32,7 +32,7 @@ export default function Projects() {
       </main>
       <section>
         <div className="container">
-          <h4 className="mt-5">Minhas <span className="yellow-txt">Redes Sociais</span>:</h4>
+          <h2 className="mt-5">Minhas <span className="yellow-txt">Redes Sociais</span>:</h2>
           <div className="d-flex justify-content-sm-start justify-content-center flex-wrap">
             <Link className='me-3 mt-2' target="_blank" href="https://github.com/KayaraSilveira">
                 <BtnOutline text="GitHub">
@@ -54,7 +54,7 @@ export default function Projects() {
       </section>
       <section>
         <div className="container">
-            <h4 className="mt-5">Me envie um <span className="yellow-txt">Email</span>:</h4>  
+            <h2 className="mt-5">Me envie um <span className="yellow-txt">Email</span>:</h2>  
             <EmailForm/>
         </div>
       </section>

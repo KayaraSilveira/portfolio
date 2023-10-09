@@ -9,7 +9,7 @@ import { FaEnvelope } from "react-icons/fa6"
 export default function Contact() {
     return <section className="my-4">
         <div className="container">
-            <h4>Entre em <span className="yellow-txt">Contato</span> comigo </h4>
+            <h3>Entre em <span className="yellow-txt">Contato</span> comigo </h3>
             <p>
                 Sinta-se à vontade para entrar em contato comigo para discutir projetos interessantes na área de desenvolvimento de software.
             </p>
@@ -18,10 +18,10 @@ export default function Contact() {
                     <div className={styles.links}> 
                         <Logo>
                             <div> • 
-                                <Link target="_blank" href='https://www.linkedin.com/in/kayara-silveira/'>
+                                <Link aria-label="Ir para Linkedin" title="Ir para Linkedin" target="_blank" href='https://www.linkedin.com/in/kayara-silveira/'>
                                     <BsLinkedin></BsLinkedin>
                                 </Link>
-                                <Link target="_blank" href='https://github.com/KayaraSilveira'>
+                                <Link aria-label="Ir para GitHub" title="Ir para GitHub" target="_blank" href='https://github.com/KayaraSilveira'>
                                     <BsGithub></BsGithub>
                                 </Link>  
                             </div>
@@ -31,7 +31,7 @@ export default function Contact() {
                         <span><FaEnvelope></FaEnvelope> silveira.kayara@gmail.com</span>
                     </div>
                 </div>
-                <div className="col-md-6 col-12 d-flex align-items-start justify-content-end mt-4">
+                <div className="col-md-6 col-12 d-flex align-items-start justify-content-start justify-content-md-end mt-4">
                    <Link href='/contact'>
                         <BtnYellow text="Enviar email agora"></BtnYellow>
                    </Link>

@@ -43,13 +43,13 @@ export default function Projects(props: ProjectsProps) {
         if (selectedTags.length === 0 || project.tags.some((tag) => selectedTags.includes(tag))) {
             return <li className="col-lg-4 col-12 mb-4" key={project.id}>
                         <Link className={styles.projectLink} href={`project/${project.id}`}>
-                            <h5>
+                            <h4>
                                 <BsFlower3></BsFlower3> {project.name} 
-                            </h5>
+                            </h4>
                             <Image
                                 className="img-fluid"
                                 src={`/projects/${project.cover}`}
-                                alt="Projeto"
+                                alt={`Captura de tela do projeto ${project.name}`}
                                 width={500} 
                                 height={300} 
                                 />

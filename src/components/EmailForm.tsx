@@ -75,7 +75,7 @@ export default function EmailForm() {
                 id="subject"
                 type="text"
                 name="subject"
-                placeholder="Assunto exemplo"
+                placeholder="Motivo do contato"
                 required
                 value={formData.subject}
                 onChange={handleInputChange}
