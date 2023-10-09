@@ -1,0 +1,12 @@
+.links {
+    font-size: 20px;
+}
+
+.links a {
+    padding-left: 10px;
+    transition: all 0.2s;
+}
+
+.links a:hover {
+    color: var(--yellow);
+}

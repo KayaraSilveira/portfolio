@@ -1,0 +1,25 @@
+.btnYellow {
+    padding: 10px 30px 10px 20px;
+    background-color: var(--yellow);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: 700;
+}
+
+.btnYellow svg {
+    transition: all 0.3s;
+}
+
+.btnYellow:hover svg {
+    transform: translateX(10px);
+}
+
+.btnYellow:disabled {
+    background-color: gray;
+    cursor: default;
+}
+
+.btnYellow:disabled svg {
+    display: none;
+}

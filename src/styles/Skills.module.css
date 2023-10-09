@@ -1,0 +1,14 @@
+.skillName {
+    font-size: 20px;
+    margin: 5px 0;
+}
+
+@media screen and (max-width: 500px) {
+    .girlcode {
+        max-width: 90%;
+        height: auto;
+    }
+    .skillName {
+        font-size: 16px;
+    }
+}

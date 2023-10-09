@@ -1,0 +1,19 @@
+
+.btnOutline {
+    border: 1px solid var(--yellow);
+    padding: 10px 20px;
+    color: var(--yellow);
+    border-radius: 10px;
+    font-weight: 700;
+    transition: all 0.2s;
+    background-color: white;
+}
+
+.btnOutline:hover {
+    background-color: var(--yellow);
+    color: white;
+}
+
+.btnOutline svg {
+    margin-right: 5px;
+}

@@ -1,0 +1,22 @@
+.listTags {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.listTags li {
+    margin: 5px;
+    padding: 0px 5px;
+    border: 1px solid var(--yellow);
+    cursor: pointer;
+    border-radius: 2px 4px;
+    transition: all 0.2s;
+    color: var(--yellow)
+
+}
+
+.listTags .selectedTag, .listTags li:hover {
+    color: white;
+    background-color: var(--yellow);
+    
+}

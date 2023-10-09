@@ -1,0 +1,10 @@
+{
+
+    "functions": {
+      "api/sendEmail": {
+        "maxDuration": 30
+      }
+    }
+    
+}
+  

@@ -1,0 +1,45 @@
+.projectLink {
+    height: 100%;
+    display: block;
+    position: relative;
+    width: 90%;
+    padding: 25px 20px 30px 20px;
+    transition: transform 0.2s ease-out;
+    margin: 0 auto;
+}
+
+.projectLink:hover {
+    transform: scale(1.1);
+    border: 1px solid var(--light-gray);
+}
+
+.tagList {
+    display: flex;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+.tagList li {
+    background-color: var(--yellow);
+    padding: 0px 2px;
+    color: white;
+    border-radius: 2px 4px;
+    font-size: 14px;
+    margin: 2px;
+}
+
+.viewProject {
+    position: absolute;
+    bottom: 0px;
+    font-weight: 500;
+}
+
+.viewProject:hover {
+    color: var(--yellow);
+}
+
+@media screen and (max-width: 767px) {
+    .projectLink {
+        width: 100%;
+    }
+}

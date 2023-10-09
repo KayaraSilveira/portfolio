@@ -1,0 +1,30 @@
+.containerHeader {
+    border-bottom: 1px dotted var(--light-gray);
+    padding: 10px 0;
+}
+
+.navLink {
+    border-bottom: 1px solid transparent;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.1s ease-out;
+}
+
+.navLink.active {
+    border-bottom: 1px solid var(--yellow);
+    font-weight: 500;
+}
+
+.navLink.active:hover {
+    color: inherit;
+}
+
+.navLink:hover {
+    color: var(--yellow)
+}
+
+@media screen and (max-width: 400px) {
+    .headerFlex {
+        flex-direction: column;
+    }
+}

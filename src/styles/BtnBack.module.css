@@ -1,0 +1,8 @@
+.btnBack {
+    background-color: transparent;
+    border: none;
+}
+
+.btnBack:hover {
+    color: var(--yellow);
+}
