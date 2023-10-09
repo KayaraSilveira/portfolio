@@ -22,7 +22,7 @@ export default function Projects(props: ProjectsProps) {
         const res = await fetch(url)
         const projects = await res.json()
         setProjects(projects)
-        setLoading(false); 
+        setLoading(false);
 
     }
 
