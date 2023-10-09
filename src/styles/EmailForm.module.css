@@ -1,5 +1,4 @@
 .formContainer {
-    width: 80%;
     margin: 25px auto;
 }
 
@@ -14,10 +13,4 @@
 .formGroup input:focus, .formGroup textarea:focus {
     border: 1px solid rgb(255, 255, 72);
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgb(255, 255, 72);
-}
-
-@media screen and (max-width: 600px) {
-    .formContainer {
-        width: 100%;
-    }
 }

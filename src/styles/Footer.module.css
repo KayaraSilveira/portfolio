@@ -1,8 +1,6 @@
-
-
 @media screen and (max-width: 500px) {
     .footerText {
+        text-align: center;
         justify-content: center !important;
-        font-size: 12px;
     }
 }

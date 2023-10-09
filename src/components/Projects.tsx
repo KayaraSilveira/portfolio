@@ -5,6 +5,7 @@ import { BsFlower3 } from "react-icons/bs";
 import { useState, useEffect } from 'react'
 import ProjectModel from "../model/project";
 import TagsFilter from "./TagsFilter";
+import Loading from "./Loading";
 
 interface ProjectsProps {
     all: boolean; 
@@ -14,12 +15,15 @@ export default function Projects(props: ProjectsProps) {
 
     const [projects, setProjects] = useState<ProjectModel[]>([])
     const [selectedTags, setSelectedTags] = useState<string[]>([]);
+    const [loading, setLoading] = useState(true);
 
     async function getProjects() {
         const url = props.all ? '/api/pageProjects' : '/api/homeProjects';
         const res = await fetch(url)
         const projects = await res.json()
         setProjects(projects)
+        setLoading(false);
+
     }
 
     useEffect(() => {
@@ -39,13 +43,13 @@ export default function Projects(props: ProjectsProps) {
         if (selectedTags.length === 0 || project.tags.some((tag) => selectedTags.includes(tag))) {
             return <li className="col-lg-4 col-12 mb-4" key={project.id}>
                         <Link className={styles.projectLink} href={`project/${project.id}`}>
-                            <h5>
+                            <h4>
                                 <BsFlower3></BsFlower3> {project.name} 
-                            </h5>
+                            </h4>
                             <Image
                                 className="img-fluid"
                                 src={`/projects/${project.cover}`}
-                                alt="Projeto"
+                                alt={`Captura de tela do projeto ${project.name}`}
                                 width={500} 
                                 height={300} 
                                 />
@@ -65,14 +69,21 @@ export default function Projects(props: ProjectsProps) {
     }
 
     return <div>
-                {props.all &&
-               <TagsFilter tags={Array.from(new Set(projects.flatMap((project) => project.tags)))}
-                    selectedTags={selectedTags}
-                    onTagClick={handleTagClick}
-                 />
-                }
-                <ul className="row justify-content-start mb-5">
-                    {projects.map(project => projectRender(project))}
-                </ul>
-            </div>
+            {loading ? ( 
+                <Loading/>
+            ) : (
+                <div>
+                    {props.all && (
+                        <TagsFilter tags={Array.from(new Set(projects.flatMap((project) => project.tags)))}
+                            selectedTags={selectedTags}
+                            onTagClick={handleTagClick}
+                        />
+                    )}
+    
+                    <ul className="row justify-content-start mb-5">
+                        {projects.map(project => projectRender(project))}
+                    </ul>
+                </div>
+            )}
+        </div>   
 }

@@ -20,3 +20,16 @@
     background-color: var(--yellow);
     
 }
+
+@media screen and (max-width: 767px) {
+
+    .listTags li:hover {
+        color: var(--yellow);
+        background-color: white;
+    }
+
+    .listTags li.selectedTag {
+        color: white;
+        background-color: var(--yellow);
+    }
+}
