@@ -9,7 +9,7 @@ interface BtnOutlineProps {
 }
 
 export default function BtnOutline(props: BtnOutlineProps) {
-    return <button type={props.type || "button"} className={styles.btnOutline}>
+    return <button type={props.type || "button"} className={`${styles.btnOutline} d-flex justify-content-center align-items-center`}>
         {props.children} 
         {props.text}
     </button>
