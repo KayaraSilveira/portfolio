@@ -5,7 +5,7 @@ export default function Contact() {
     return <footer>
         <div className="container">
             <div className={`d-flex justify-content-end ${styles.footerText}`}>
-                <p>Copyrights © 2023 - Developed by Kayara <BsFlower3></BsFlower3></p>
+                <p><small>Copyrights © 2023 - Developed by Kayara <BsFlower3></BsFlower3> v1.1.0</small></p>
             </div>
         </div>
     </footer>
