@@ -2,7 +2,7 @@
 
     "functions": {
       "api/sendEmail": {
-        "maxDuration": 30
+        "maxDuration": 10
       }
     }
     
